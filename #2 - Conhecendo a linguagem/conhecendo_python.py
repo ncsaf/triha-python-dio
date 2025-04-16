@@ -1,5 +1,5 @@
 '''
-1 Tipos de dados
+#1 Tipos de dados
  int - inteiro
 bool - boleano
 str - string
@@ -10,14 +10,17 @@ print("Este é um número float: +10.5")
 print("Este é um número Bool: True")
 print("Isto é uma String"+" Ola")
 
+------------------------------------------------------------------------------------------------
 
-2 Modo Interativo
+#2 Modo Interativo
 Digitar python no console abre o modo interativo
 python -i nome_do_arquivo.py -> roda o arquivo no terminal
 help ou help() -> Ajuda sobre algum objeto
 dir() ou dir -> lista os diretorios do projeto ou de um objeto
 
-3 Variaveis e Constantes
+-------------------------------------------------------------------------------------------------
+
+#3 Variaveis e Constantes
 age = 26
 name = "Nilton"
 
@@ -26,8 +29,9 @@ VARIAVEL_CONSTANTE = "Não nativa do python, convensão usada: Maiuscula e snake
 
 print(VARIAVEL_CONSTANTE,age,name) 
 
-4 Conversão de Tipos de dados
-'''
+--------------------------------------------------------------------------------------------------
+
+#4 Conversão de Tipos de dados
 preco = 10.40
 idade = 21
 texto = "20"
@@ -37,3 +41,12 @@ print(int(preco))
 print(type(float(texto))) #type() retorna o tipo de dado daquela variável
 print(100/2) #Retorna a divisão com ponto flutuante
 print(100//2) #Retorna a divisão somente com parte inteira
+
+--------------------------------------------------------------------------------------------------
+'''
+#5 Funcoes de Entrada e saida
+nome = input("Digite seu nome:")
+idade = input("Digite sua idade:")
+
+print("Olá, seu nome é %s e voce tem %s anos"%(nome,idade), sep=",", end=", Obrigado\n")
+
