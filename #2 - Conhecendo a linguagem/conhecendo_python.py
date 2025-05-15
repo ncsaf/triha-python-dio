@@ -24,7 +24,7 @@ dir() ou dir -> lista os diretorios do projeto ou de um objeto
 age = 26
 name = "Nilton"
 
-age, name = 27 , "Cesar"
+age, name = 27 , "Cesar" #Atribuição Multipla
 VARIAVEL_CONSTANTE = "Não nativa do python, convensão usada: Maiuscula e snake_case"
 
 print(VARIAVEL_CONSTANTE,age,name) 
