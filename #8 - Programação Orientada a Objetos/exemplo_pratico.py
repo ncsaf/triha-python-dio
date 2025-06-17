@@ -14,11 +14,17 @@ class Bicicleta:
       def correr(self):
             print("Bicicleta andando")
 
-bike1 = Bicicleta("Preta","Monark",1999, 100)
-bike1.buzinar()
-bike1.correr()
-bike1.parar()
-print(bike1.ano, bike1.cor, bike1.marca)
+      def __str__(self):
+            return f"{self.__class__.__name__}: {', '.join([f"{chave}={valor}" for chave, valor in self.__dict__.items()])}"
+      
+      def __del__(self):
+            print("Removendo a instancia da memoria")
 
-Bicicleta.buzinar(bike1)
+bike1 = Bicicleta("Preta","Monark",1999, 100)
+# bike1.buzinar()
+# bike1.correr()
+# bike1.parar()
+print(bike1)
+
+#Bicicleta.buzinar(bike1)
 
