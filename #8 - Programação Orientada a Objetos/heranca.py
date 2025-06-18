@@ -25,15 +25,3 @@ class Onitorrinco(Mamifero,Ave):
 
 oni = Onitorrinco("amarelo", "preto",4)
 print(oni)
-
-
-class Foo:
-      def hello(self):
-            print(self.__class__.__name__.lower())
-
-class Bar(Foo):
-      def hello(self):
-            return super().hello()
-      
-bar = Bar()
-bar.hello()
